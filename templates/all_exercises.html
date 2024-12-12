@@ -1,0 +1,13 @@
+<html>
+    <div>
+        These are your current exercises: 
+    </div>
+    <ul>
+        {{range .AllExercises}}
+            <li>{{.}}</li>
+        {{end}}
+    </ul> 
+    <form action="/exercises/create" method="GET">
+        <input type="submit" value="Create an exercise" />
+    </form>
+</html>
