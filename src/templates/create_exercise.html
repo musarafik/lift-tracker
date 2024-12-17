@@ -2,15 +2,15 @@
     <form action="/api/exercises" method="POST">
         <div>
             <label for="name">Name of exercise</label>
-            <input name="name" id="name" />
+            <input name="name" id="name" required />
         </div>
         <div>
             <label for="sets">How many sets?</label>
-            <input name="sets" id="sets" />
+            <input type="number" name="sets" id="sets" required />
         </div>
         <div>
             <label for="reps">How many reps?</label>
-            <input name="reps" id="reps" />
+            <input type="number" name="reps" id="reps" required />
         </div>
         <div>
             <button>Create exercise</button>
